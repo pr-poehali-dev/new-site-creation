@@ -126,7 +126,7 @@ const Index = () => {
         <div className="container mx-auto px-4">
           <div className="max-w-3xl">
             <h1 className="text-4xl md:text-6xl font-bold mb-6 leading-tight">
-              Надёжные грузоперевозки сыпучих материалов
+              Грузоперевозки сыпучих материалов
             </h1>
             <p className="text-lg md:text-xl mb-8 opacity-90">
               Доставляем песок, щебень, грунт, уголь и другие сыпучие материалы по г. Хабаровск и району. Честный вес и гарантия сроков.
