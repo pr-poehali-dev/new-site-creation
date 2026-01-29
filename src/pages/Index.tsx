@@ -11,6 +11,7 @@ const Index = () => {
   const [volume, setVolume] = useState('');
   const [distance, setDistance] = useState('');
   const [cost, setCost] = useState<number | null>(null);
+  const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
   const calculateCost = () => {
     const w = parseFloat(weight) || 0;
@@ -41,10 +42,84 @@ const Index = () => {
             <li><a href="#contacts" className="hover:text-primary transition-colors">Контакты</a></li>
           </ul>
           <Button size="sm" className="hidden md:block">Связаться</Button>
-          <button className="md:hidden">
-            <Icon name="Menu" size={24} />
+          <button className="md:hidden" onClick={() => setMobileMenuOpen(!mobileMenuOpen)}>
+            <Icon name={mobileMenuOpen ? "X" : "Menu"} size={24} />
           </button>
         </nav>
+        {mobileMenuOpen && (
+          <div className="md:hidden bg-secondary/95 backdrop-blur-sm border-t border-white/10 animate-in slide-in-from-top-4">
+            <ul className="container mx-auto px-4 py-4 space-y-3">
+              <li>
+                <a 
+                  href="#hero" 
+                  className="block py-2 hover:text-primary transition-colors"
+                  onClick={() => setMobileMenuOpen(false)}
+                >
+                  Главная
+                </a>
+              </li>
+              <li>
+                <a 
+                  href="#services" 
+                  className="block py-2 hover:text-primary transition-colors"
+                  onClick={() => setMobileMenuOpen(false)}
+                >
+                  Услуги
+                </a>
+              </li>
+              <li>
+                <a 
+                  href="#about" 
+                  className="block py-2 hover:text-primary transition-colors"
+                  onClick={() => setMobileMenuOpen(false)}
+                >
+                  О компании
+                </a>
+              </li>
+              <li>
+                <a 
+                  href="#portfolio" 
+                  className="block py-2 hover:text-primary transition-colors"
+                  onClick={() => setMobileMenuOpen(false)}
+                >
+                  Портфолио
+                </a>
+              </li>
+              <li>
+                <a 
+                  href="#calculator" 
+                  className="block py-2 hover:text-primary transition-colors"
+                  onClick={() => setMobileMenuOpen(false)}
+                >
+                  Калькулятор
+                </a>
+              </li>
+              <li>
+                <a 
+                  href="#faq" 
+                  className="block py-2 hover:text-primary transition-colors"
+                  onClick={() => setMobileMenuOpen(false)}
+                >
+                  FAQ
+                </a>
+              </li>
+              <li>
+                <a 
+                  href="#contacts" 
+                  className="block py-2 hover:text-primary transition-colors"
+                  onClick={() => setMobileMenuOpen(false)}
+                >
+                  Контакты
+                </a>
+              </li>
+              <li className="pt-2">
+                <Button className="w-full" onClick={() => setMobileMenuOpen(false)}>
+                  Связаться
+                </Button>
+              </li>
+            </ul>
+          </div>
+        )}
       </header>
 
       <section id="hero" className="relative bg-secondary text-secondary-foreground py-24 md:py-32">
