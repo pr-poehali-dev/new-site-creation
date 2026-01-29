@@ -129,7 +129,7 @@ const Index = () => {
               Надёжные грузоперевозки сыпучих материалов
             </h1>
             <p className="text-lg md:text-xl mb-8 opacity-90">
-              Доставляем песок, щебень, грунт и другие сыпучие материалы по району. Собственный автопарк и гарантия сроков.
+              Доставляем песок, щебень, грунт, уголь и другие сыпучие материалы по г. Хабаровск и району. Честный вес и гарантия сроков.
             </p>
             <div className="flex flex-col sm:flex-row gap-4">
               <Button size="lg" className="text-base">
@@ -138,7 +138,7 @@ const Index = () => {
               </Button>
               <Button size="lg" variant="outline" className="text-base bg-white/10 border-white/20 hover:bg-white/20">
                 <Icon name="Phone" className="mr-2" size={20} />
-                +7 994 064-54-74
+                44-60-70
               </Button>
             </div>
           </div>
@@ -165,6 +165,7 @@ const Index = () => {
               { icon: 'Mountain', title: 'Песок', desc: 'Речной и карьерный песок всех фракций' },
               { icon: 'Gem', title: 'Щебень', desc: 'Гранитный и гравийный щебень' },
               { icon: 'Layers', title: 'Грунт', desc: 'Плодородный и строительный грунт' },
+              { icon: 'Flame', title: 'Уголь', desc: 'Каменный уголь для отопления' },
               { icon: 'Box', title: 'Отсев', desc: 'Гранитный отсев для дорожных работ' },
               { icon: 'Package', title: 'ПГС', desc: 'Песчано-гравийная смесь' },
               { icon: 'CircleDot', title: 'Керамзит', desc: 'Для утепления и стяжки' },
@@ -191,12 +192,12 @@ const Index = () => {
             <div>
               <h2 className="text-3xl md:text-4xl font-bold mb-6">О компании</h2>
               <p className="text-lg text-muted-foreground mb-6">
-                Работаем на рынке грузоперевозок сыпучих материалов более 10 лет. 
-                Собственный автопарк из 25 единиц техники позволяет выполнять заказы любой сложности.
+                Работаем на рынке грузоперевозок сыпучих материалов в Хабаровске более 10 лет. 
+                Гарантируем честный вес материалов и соблюдение сроков доставки.
               </p>
               <div className="space-y-4">
                 {[
-                  { icon: 'CheckCircle', text: 'Собственный автопарк самосвалов' },
+                  { icon: 'Scale', text: 'Честный вес — взвешивание на месте' },
                   { icon: 'Clock', text: 'Доставка точно в срок' },
                   { icon: 'Shield', text: 'Гарантия качества материалов' },
                   { icon: 'Users', text: 'Опытные водители со стажем' }
@@ -373,14 +374,14 @@ const Index = () => {
                       <Icon name="Phone" size={24} className="text-primary mt-1" />
                       <div>
                         <p className="font-medium mb-1">Телефон</p>
-                        <a href="tel:+79940645474" className="text-sm opacity-80 hover:text-primary transition-colors">+7 994 064-54-74</a>
+                        <a href="tel:446070" className="text-sm opacity-80 hover:text-primary transition-colors">44-60-70</a>
                       </div>
                     </div>
                     <div className="flex items-start gap-4">
                       <Icon name="Mail" size={24} className="text-primary mt-1" />
                       <div>
                         <p className="font-medium mb-1">Email</p>
-                        <a href="mailto:446070@mail.ru" className="text-sm opacity-80 hover:text-primary transition-colors">446070@mail.ru</a>
+                        <a href="mailto:stramilov82@mail.ru" className="text-sm opacity-80 hover:text-primary transition-colors">stramilov82@mail.ru</a>
                       </div>
                     </div>
                     <div className="flex items-start gap-4">
@@ -418,7 +419,7 @@ const Index = () => {
                     </div>
                     <div className="space-y-2">
                       <Label htmlFor="contact">Телефон или email</Label>
-                      <Input id="contact" placeholder="+7 994 064-54-74" className="bg-white/10 border-white/20" />
+                      <Input id="contact" placeholder="44-60-70" className="bg-white/10 border-white/20" />
                     </div>
                     <div className="space-y-2">
                       <Label htmlFor="message">Сообщение</Label>
