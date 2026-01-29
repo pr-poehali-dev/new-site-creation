@@ -374,7 +374,10 @@ const Index = () => {
                       <Icon name="Phone" size={24} className="text-primary mt-1" />
                       <div>
                         <p className="font-medium mb-1">Телефон</p>
-                        <a href="tel:446070" className="text-sm opacity-80 hover:text-primary transition-colors">44-60-70</a>
+                        <div className="space-y-1">
+                          <a href="tel:446070" className="text-sm opacity-80 hover:text-primary transition-colors block">44-60-70</a>
+                          <a href="tel:+79940645474" className="text-sm opacity-80 hover:text-primary transition-colors block">+7 994 064-54-74</a>
+                        </div>
                       </div>
                     </div>
                     <div className="flex items-start gap-4">
