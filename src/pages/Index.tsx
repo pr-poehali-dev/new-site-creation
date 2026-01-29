@@ -129,7 +129,7 @@ const Index = () => {
               Надёжные грузоперевозки сыпучих материалов
             </h1>
             <p className="text-lg md:text-xl mb-8 opacity-90">
-              Доставляем песок, щебень, грунт и другие сыпучие материалы по всему региону. Собственный автопарк и гарантия сроков.
+              Доставляем песок, щебень, грунт и другие сыпучие материалы по району. Собственный автопарк и гарантия сроков.
             </p>
             <div className="flex flex-col sm:flex-row gap-4">
               <Button size="lg" className="text-base">
@@ -138,7 +138,7 @@ const Index = () => {
               </Button>
               <Button size="lg" variant="outline" className="text-base bg-white/10 border-white/20 hover:bg-white/20">
                 <Icon name="Phone" className="mr-2" size={20} />
-                +7 (XXX) XXX-XX-XX
+                +7 994 064-54-74
               </Button>
             </div>
           </div>
@@ -373,21 +373,30 @@ const Index = () => {
                       <Icon name="Phone" size={24} className="text-primary mt-1" />
                       <div>
                         <p className="font-medium mb-1">Телефон</p>
-                        <p className="text-sm opacity-80">+7 (XXX) XXX-XX-XX</p>
+                        <a href="tel:+79940645474" className="text-sm opacity-80 hover:text-primary transition-colors">+7 994 064-54-74</a>
                       </div>
                     </div>
                     <div className="flex items-start gap-4">
                       <Icon name="Mail" size={24} className="text-primary mt-1" />
                       <div>
                         <p className="font-medium mb-1">Email</p>
-                        <p className="text-sm opacity-80">info@transsypuchie.ru</p>
+                        <a href="mailto:446070@mail.ru" className="text-sm opacity-80 hover:text-primary transition-colors">446070@mail.ru</a>
                       </div>
                     </div>
                     <div className="flex items-start gap-4">
-                      <Icon name="MapPin" size={24} className="text-primary mt-1" />
+                      <Icon name="MessageCircle" size={24} className="text-primary mt-1" />
                       <div>
-                        <p className="font-medium mb-1">Адрес</p>
-                        <p className="text-sm opacity-80">г. Город, ул. Промышленная, 15</p>
+                        <p className="font-medium mb-1">WhatsApp / Telegram</p>
+                        <div className="flex gap-3">
+                          <a href="https://wa.me/79940645474" target="_blank" rel="noopener noreferrer" className="text-sm opacity-80 hover:text-primary transition-colors flex items-center gap-1">
+                            <Icon name="MessageCircle" size={16} />
+                            WhatsApp
+                          </a>
+                          <a href="https://t.me/+79940645474" target="_blank" rel="noopener noreferrer" className="text-sm opacity-80 hover:text-primary transition-colors flex items-center gap-1">
+                            <Icon name="Send" size={16} />
+                            Telegram
+                          </a>
+                        </div>
                       </div>
                     </div>
                     <div className="flex items-start gap-4">
@@ -409,7 +418,7 @@ const Index = () => {
                     </div>
                     <div className="space-y-2">
                       <Label htmlFor="contact">Телефон или email</Label>
-                      <Input id="contact" placeholder="+7 (XXX) XXX-XX-XX" className="bg-white/10 border-white/20" />
+                      <Input id="contact" placeholder="+7 994 064-54-74" className="bg-white/10 border-white/20" />
                     </div>
                     <div className="space-y-2">
                       <Label htmlFor="message">Сообщение</Label>
