@@ -36,7 +36,7 @@ const Index = () => {
             <li><a href="#hero" className="hover:text-primary transition-colors">Главная</a></li>
             <li><a href="#services" className="hover:text-primary transition-colors">Услуги</a></li>
             <li><a href="#about" className="hover:text-primary transition-colors">О компании</a></li>
-            <li><a href="#portfolio" className="hover:text-primary transition-colors">Портфолио</a></li>
+
             <li><a href="#calculator" className="hover:text-primary transition-colors">Калькулятор</a></li>
             <li><a href="#faq" className="hover:text-primary transition-colors">FAQ</a></li>
             <li><a href="#contacts" className="hover:text-primary transition-colors">Контакты</a></li>
@@ -76,15 +76,7 @@ const Index = () => {
                   О компании
                 </a>
               </li>
-              <li>
-                <a 
-                  href="#portfolio" 
-                  className="block py-2 hover:text-primary transition-colors"
-                  onClick={() => setMobileMenuOpen(false)}
-                >
-                  Портфолио
-                </a>
-              </li>
+
               <li>
                 <a 
                   href="#calculator" 
@@ -244,39 +236,7 @@ const Index = () => {
         </div>
       </section>
 
-      <section id="portfolio" className="py-20">
-        <div className="container mx-auto px-4">
-          <div className="text-center mb-16">
-            <h2 className="text-3xl md:text-4xl font-bold mb-4">Выполненные проекты</h2>
-            <p className="text-muted-foreground text-lg">Примеры наших работ</p>
-          </div>
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-            {[
-              { title: 'Строительство коттеджного посёлка', volume: '5000 тонн', material: 'Песок, щебень' },
-              { title: 'Дорожное строительство М-7', volume: '12000 тонн', material: 'ПГС, отсев' },
-              { title: 'Благоустройство парковой зоны', volume: '800 тонн', material: 'Грунт, торф' }
-            ].map((project, idx) => (
-              <Card key={idx}>
-                <CardHeader>
-                  <CardTitle className="text-lg">{project.title}</CardTitle>
-                </CardHeader>
-                <CardContent>
-                  <div className="space-y-2 text-sm">
-                    <div className="flex justify-between">
-                      <span className="text-muted-foreground">Объём:</span>
-                      <span className="font-medium">{project.volume}</span>
-                    </div>
-                    <div className="flex justify-between">
-                      <span className="text-muted-foreground">Материал:</span>
-                      <span className="font-medium">{project.material}</span>
-                    </div>
-                  </div>
-                </CardContent>
-              </Card>
-            ))}
-          </div>
-        </div>
-      </section>
+
 
       <section id="calculator" className="py-20 bg-muted/30">
         <div className="container mx-auto px-4">
