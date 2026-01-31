@@ -168,6 +168,13 @@ const Index = () => {
               Специализируемся на перевозке различных типов сыпучих материалов
             </p>
           </div>
+          <div className="mb-12 rounded-2xl overflow-hidden shadow-xl max-w-4xl mx-auto">
+            <img 
+              src="https://cdn.poehali.dev/files/6843e238-5a2d-4143-9428-ccb41983cc54.jpg" 
+              alt="Грузовик с материалами" 
+              className="w-full h-auto object-cover"
+            />
+          </div>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
             {[
               { icon: 'Mountain', title: 'Песок', desc: 'Речной и карьерный песок всех фракций' },
