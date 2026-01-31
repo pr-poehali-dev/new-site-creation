@@ -181,10 +181,8 @@ const Index = () => {
               { icon: 'Mountain', title: 'Песок', desc: 'Речной и карьерный песок всех фракций' },
               { icon: 'Gem', title: 'Щебень и смеси', desc: 'Фракции 5-10мм, 5-20мм, 20-40мм, 40-70мм, 25-60мм, 100-200мм, разногабаритный. Смеси С-11, С-5, С-4, С-4 (М800), отсев' },
               { icon: 'LandPlot', title: 'Грунт', desc: 'Плодородный и строительный грунт' },
-              { icon: 'Flame', title: 'Уголь', desc: 'Каменный уголь для отопления' },
+              { icon: 'Flame', title: 'Уголь', desc: 'Ачинский, Хакаский (сеяный и нет)' },
               { icon: 'Package', title: 'ПГС', desc: 'Песчано-гравийная смесь' },
-              { icon: 'CircleDot', title: 'Керамзит', desc: 'Для утепления и стяжки' },
-              { icon: 'Square', title: 'Торф', desc: 'Для благоустройства территорий' },
               { icon: 'Boxes', title: 'Другое', desc: 'Индивидуальные решения' }
             ].map((service, idx) => (
               <Card key={idx} className="hover:shadow-lg transition-shadow">
