@@ -183,6 +183,7 @@ const Index = () => {
               { icon: 'LandPlot', title: 'Грунт', desc: 'Плодородный и строительный грунт' },
               { icon: 'Flame', title: 'Уголь', desc: 'Ачинский, Хакаский (сеяный и нет)' },
               { icon: 'Package', title: 'ПГС', desc: 'Песчано-гравийная смесь' },
+              { icon: 'Pickaxe', title: 'Скальник', desc: 'Дробленный скальный грунт' },
               { icon: 'Boxes', title: 'Другое', desc: 'Индивидуальные решения' }
             ].map((service, idx) => (
               <Card key={idx} className="hover:shadow-lg transition-shadow">
