@@ -37,7 +37,7 @@ const Index = () => {
             <li><a href="#services" className="hover:text-primary transition-colors">Услуги</a></li>
             <li><a href="#about" className="hover:text-primary transition-colors">О компании</a></li>
 
-            <li><a href="#calculator" className="hover:text-primary transition-colors">Калькулятор</a></li>
+
             <li><a href="#faq" className="hover:text-primary transition-colors">FAQ</a></li>
             <li><a href="#contacts" className="hover:text-primary transition-colors">Контакты</a></li>
           </ul>
@@ -77,15 +77,7 @@ const Index = () => {
                 </a>
               </li>
 
-              <li>
-                <a 
-                  href="#calculator" 
-                  className="block py-2 hover:text-primary transition-colors"
-                  onClick={() => setMobileMenuOpen(false)}
-                >
-                  Калькулятор
-                </a>
-              </li>
+
               <li>
                 <a 
                   href="#faq" 
@@ -236,63 +228,7 @@ const Index = () => {
 
 
 
-      <section id="calculator" className="py-20 bg-muted/30">
-        <div className="container mx-auto px-4">
-          <div className="max-w-2xl mx-auto">
-            <Card>
-              <CardHeader>
-                <CardTitle className="text-2xl md:text-3xl">Калькулятор стоимости</CardTitle>
-                <CardDescription>Рассчитайте примерную стоимость доставки</CardDescription>
-              </CardHeader>
-              <CardContent className="space-y-6">
-                <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-                  <div className="space-y-2">
-                    <Label htmlFor="weight">Вес груза (тонн)</Label>
-                    <Input 
-                      id="weight" 
-                      type="number" 
-                      placeholder="10"
-                      value={weight}
-                      onChange={(e) => setWeight(e.target.value)}
-                    />
-                  </div>
-                  <div className="space-y-2">
-                    <Label htmlFor="volume">Объём (м³)</Label>
-                    <Input 
-                      id="volume" 
-                      type="number" 
-                      placeholder="15"
-                      value={volume}
-                      onChange={(e) => setVolume(e.target.value)}
-                    />
-                  </div>
-                </div>
-                <div className="space-y-2">
-                  <Label htmlFor="distance">Расстояние (км)</Label>
-                  <Input 
-                    id="distance" 
-                    type="number" 
-                    placeholder="50"
-                    value={distance}
-                    onChange={(e) => setDistance(e.target.value)}
-                  />
-                </div>
-                <Button onClick={calculateCost} className="w-full" size="lg">
-                  <Icon name="Calculator" className="mr-2" size={20} />
-                  Рассчитать
-                </Button>
-                {cost !== null && (
-                  <div className="bg-primary/10 border border-primary/20 rounded-lg p-6 text-center animate-in fade-in slide-in-from-bottom-4">
-                    <p className="text-sm text-muted-foreground mb-2">Примерная стоимость:</p>
-                    <p className="text-4xl font-bold text-primary">{cost.toLocaleString()} ₽</p>
-                    <p className="text-xs text-muted-foreground mt-2">Итоговая стоимость уточняется при оформлении заказа</p>
-                  </div>
-                )}
-              </CardContent>
-            </Card>
-          </div>
-        </div>
-      </section>
+
 
       <section id="faq" className="py-20">
         <div className="container mx-auto px-4">
@@ -348,7 +284,7 @@ const Index = () => {
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto">
             <h2 className="text-3xl md:text-4xl font-bold mb-12 text-center">Контакты</h2>
-            <div className="grid md:grid-cols-2 gap-8">
+            <div className="max-w-xl mx-auto">
               <Card className="bg-white/10 border-white/20">
                 <CardContent className="pt-6">
                   <div className="space-y-6">
@@ -397,25 +333,7 @@ const Index = () => {
                   </div>
                 </CardContent>
               </Card>
-              <Card className="bg-white/10 border-white/20">
-                <CardContent className="pt-6">
-                  <form className="space-y-4">
-                    <div className="space-y-2">
-                      <Label htmlFor="name">Ваше имя</Label>
-                      <Input id="name" placeholder="Иван Иванов" className="bg-white/10 border-white/20" />
-                    </div>
-                    <div className="space-y-2">
-                      <Label htmlFor="contact">Телефон или email</Label>
-                      <Input id="contact" placeholder="44-60-70" className="bg-white/10 border-white/20" />
-                    </div>
-                    <div className="space-y-2">
-                      <Label htmlFor="message">Сообщение</Label>
-                      <Input id="message" placeholder="Опишите ваш запрос" className="bg-white/10 border-white/20" />
-                    </div>
-                    <Button className="w-full">Отправить заявку</Button>
-                  </form>
-                </CardContent>
-              </Card>
+
             </div>
           </div>
         </div>
