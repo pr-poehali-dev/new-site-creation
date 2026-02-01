@@ -168,10 +168,40 @@ const Index = () => {
               Специализируемся на перевозке различных типов сыпучих материалов
             </p>
           </div>
+          <div className="mb-12 grid grid-cols-1 md:grid-cols-2 gap-4 max-w-6xl mx-auto">
+            <div className="rounded-2xl overflow-hidden shadow-xl">
+              <img 
+                src="https://cdn.poehali.dev/files/35b99dd3-cd44-4736-8fcf-fcb9719778a0.jpg" 
+                alt="Грузовик с щебнем" 
+                className="w-full h-full object-cover"
+              />
+            </div>
+            <div className="rounded-2xl overflow-hidden shadow-xl">
+              <img 
+                src="https://cdn.poehali.dev/files/51fb1d06-b7f4-40b4-a888-15a586bb6b60.jpg" 
+                alt="Грузовик с углем" 
+                className="w-full h-full object-cover"
+              />
+            </div>
+            <div className="rounded-2xl overflow-hidden shadow-xl">
+              <img 
+                src="https://cdn.poehali.dev/files/b36f1368-bd99-429d-a69a-200b8f0db1be.jpg" 
+                alt="Грузовик с досками" 
+                className="w-full h-full object-cover"
+              />
+            </div>
+            <div className="rounded-2xl overflow-hidden shadow-xl">
+              <img 
+                src="https://cdn.poehali.dev/files/eb0df796-3af0-488e-af1e-721b7d998802.jpg" 
+                alt="Грузовик с дровами" 
+                className="w-full h-full object-cover"
+              />
+            </div>
+          </div>
           <div className="mb-12 rounded-2xl overflow-hidden shadow-xl max-w-4xl mx-auto">
             <img 
-              src="https://cdn.poehali.dev/files/6843e238-5a2d-4143-9428-ccb41983cc54.jpg" 
-              alt="Грузовик с материалами" 
+              src="https://cdn.poehali.dev/files/a1161313-623b-4b3f-a040-07224e2b4a3b.jpg" 
+              alt="Щебень выгрузка" 
               className="w-full h-auto object-cover"
             />
           </div>
