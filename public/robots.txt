@@ -12,3 +12,5 @@ Allow: /
 
 User-agent: *
 Allow: /
+
+Sitemap: https://new-site-creation--preview.poehali.dev/sitemap.xml
