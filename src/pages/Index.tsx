@@ -213,7 +213,9 @@ const Index = () => {
               { icon: 'Flame', title: 'Уголь', desc: 'Ачинский, Хакаский (сеяный и нет)' },
               { icon: 'Package', title: 'ПГС', desc: 'Песчано-гравийная смесь' },
               { icon: 'Pickaxe', title: 'Скальник', desc: 'Дробленный скальный грунт' },
-              { icon: 'Boxes', title: 'Другое', desc: 'Индивидуальные решения' }
+              { icon: 'Boxes', title: 'Другое', desc: 'Индивидуальные решения' },
+              { icon: 'Clock', title: 'Почасовая аренда самосвала', desc: 'Аренда самосвала с водителем на час — удобно для погрузочных работ и коротких рейсов' },
+              { icon: 'Building2', title: 'Работа с юридическими лицами', desc: 'Безналичный расчёт, закрывающие документы, договор — всё для корпоративных клиентов' }
             ].map((service, idx) => (
               <Card key={idx} className="hover:shadow-lg transition-shadow">
                 <CardHeader>
